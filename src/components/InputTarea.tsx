@@ -23,12 +23,12 @@ export default function InputTarea() {
 
   return (
    <input
-  className="  w-full
-    bg-transparent
+  className="    w-full
+    text-base
+    py-3
     border-b border-neutral-700
-    py-2
+    bg-transparent
     outline-none
-    text-sm
     placeholder:text-neutral-500
     focus:border-purple-400"
   placeholder="Escribe una tarea..."

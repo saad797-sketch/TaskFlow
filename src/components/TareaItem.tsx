@@ -14,7 +14,7 @@ function TareaItem({ tarea }: { tarea: Tarea }) {
   } = useTareasActions()
 
   return (
-    <li className="flex items-center justify-between py-2 border-b border-neutral-800">
+    <li className=" flex items-center justify-between gap-2 py-3 border-b border-neutral-800">
 
   {editandoId === tarea.id ? (
     <input
@@ -36,8 +36,7 @@ function TareaItem({ tarea }: { tarea: Tarea }) {
   ) : (
     <span
       onClick={() => toggleTarea(tarea.id)}
-      className={`
-        flex-1 text-sm cursor-pointer transition
+      className={`flex-1 min-w-0 text-base break-all
         ${tarea.completado
           ? "line-through text-neutral-500"
           : "hover:text-neutral-300"}
@@ -47,7 +46,7 @@ function TareaItem({ tarea }: { tarea: Tarea }) {
     </span>
   )}
 
-  <div className="flex gap-2 text-neutral-500">
+  <div className="flex gap-2 text-neutral-500 shrink-0">
     <button
       onClick={() => eliminarTarea(tarea.id)}
       className="hover:text-red-400 transition"
@@ -60,7 +59,7 @@ function TareaItem({ tarea }: { tarea: Tarea }) {
         setEditandoId(tarea.id)
         setTextoEditado(tarea.texto)
       }}
-      className="hover:text-neutral-300 transition"
+      className="px-3 py-2 text-sm active:scale-95 hover:text-green-300 transition shrink-0"
     >
       •••
     </button>

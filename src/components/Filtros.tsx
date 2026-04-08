@@ -5,7 +5,7 @@ export default function Filtros() {
   const { setFiltro } = useTareasActions()
 
   return (
-    <div style={{display: "flex", justifyContent: "center", gap: "20px", margin: "20px 0"}}>
+    <div className="flex justify-center gap-3 sm:gap-5 my-4 sm:my-5">
       {["todas", "completadas", "pendientes"].map(f => (
         <button
           key={f}
