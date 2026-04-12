@@ -30,9 +30,6 @@ export const TareasProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   const eliminarTarea = (id: number) => {
-    const confirmar = window.confirm("¿Eliminar tarea?")
-    if (!confirmar) return
-
     setTareas(tareas.filter(t => t.id !== id))
   }
 
