@@ -6,11 +6,7 @@ export default function Header() {
 
   return (
     <header style={{ marginBottom: "20px" }}>
-      <div className="flex items-center justify-between">
-        <div>
-          <h1>TaskFlow</h1>
-          <p>Organiza tu productividad</p>
-        </div>
+      <div className="flex items-center gap-4">
         <button
           onClick={() => setSidebarVisible(!sidebarVisible)}
           className="md:hidden p-2 text-neutral-300 hover:text-neutral-100"
@@ -21,6 +17,9 @@ export default function Header() {
             <span className="block w-full h-0.5 bg-current"></span>
           </div>
         </button>
+        <div>
+          <h1>TaskFlow</h1>
+        </div>
       </div>
     </header>
   )

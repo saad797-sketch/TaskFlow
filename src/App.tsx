@@ -10,7 +10,7 @@ function App() {
   bg-neutral-900 text-neutral-100
   flex justify-center">
 
-      <div className={`${sidebarVisible ? 'block' : 'hidden'} md:block`}>
+      <div className={`transition-transform duration-300 ease-in-out ${sidebarVisible ? 'translate-x-0' : 'md:translate-x-0 -translate-x-full'}`}>
         <Sidebar />
       </div>
 
