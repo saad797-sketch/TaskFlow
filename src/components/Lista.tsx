@@ -12,7 +12,7 @@ export default function Lista() {
   })
 
   return (
-    <ul className="flex flex-col gap-2">
+    <ul className="flex flex-col gap-1">
       {filtradas.map(t => (
         <TareaItem key={t.id} tarea={t} />
       ))}

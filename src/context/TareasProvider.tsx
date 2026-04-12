@@ -16,6 +16,7 @@ export const TareasProvider = ({ children }: { children: React.ReactNode }) => {
   const [editandoId, setEditandoId] = useState<number | null>(null)
   const [textoEditado, setTextoEditado] = useState("")
   const [filtro, setFiltro] = useState("todas")
+  const [sidebarVisible, setSidebarVisible] = useState(false)
 
   useEffect(() => {
     localStorage.setItem("tareas", JSON.stringify(tareas))
@@ -46,7 +47,8 @@ export const TareasProvider = ({ children }: { children: React.ReactNode }) => {
       tareas,
       editandoId,
       textoEditado,
-      filtro
+      filtro,
+      sidebarVisible
     }}>
       <TareasActionsContext.Provider value={{
         setTareas,
@@ -55,7 +57,8 @@ export const TareasProvider = ({ children }: { children: React.ReactNode }) => {
         setFiltro,
         toggleTarea,
         eliminarTarea,
-        editarTarea
+        editarTarea,
+        setSidebarVisible
       }}>
         {children}
       </TareasActionsContext.Provider>

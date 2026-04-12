@@ -7,6 +7,7 @@ type TareasState = {
   editandoId: number | null
   textoEditado: string
   filtro: string
+  sidebarVisible: boolean
 }
 
 // ACTIONS
@@ -18,6 +19,7 @@ type TareasActions = {
   toggleTarea: (id: number) => void
   eliminarTarea: (id: number) => void
   editarTarea: (id: number, texto: string) => void
+  setSidebarVisible: (visible: boolean) => void
 }
 
 // context separados
