@@ -32,17 +32,9 @@ Este proyecto fue desarrollado con énfasis en:
 * Separación de lógica y UI
 * UX minimalista y funcional
 
-## 📸 Preview
-
-(agrega screenshots aquí luego)
-
 ## 💡 Aprendizajes clave
 
 * Arquitectura de aplicaciones React escalables
 * Manejo de eventos y UX (Enter, blur, confirmaciones)
 * Organización profesional de código
 
-    },
-  },
-])
-```
